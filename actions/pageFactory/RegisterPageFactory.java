@@ -1,11 +1,10 @@
 package pageFactory;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import pageUIs.RegisterPageUI;
 
 public class RegisterPageFactory extends BasePage {
     private WebDriver driver;
@@ -56,6 +55,28 @@ public class RegisterPageFactory extends BasePage {
 
     @FindBy(xpath = "//a[@class='ico-logout']")
     private WebElement logOut;
+
+    @FindBy(xpath = "//li[text()='1']")
+    @CacheLookup
+    private WebElement oneNumberText;
+
+    public void clickToOneNumberText(){
+        waitForElementClickable(driver,oneNumberText);
+        clickToElement(oneNumberText);
+    }
+
+    public boolean isOneNumberTextSelected(){
+        waitForElementSelect(oneNumberText);
+        return isElementSelected(oneNumberText);
+    }
+
+    @FindBy(css="button.fhs-btn-login")
+    private WebElement loginButton;
+
+    public boolean isLoginButtonDisabled(){
+        waitForElementVisible(driver,loginButton);
+        return  isElementDisplayed(loginButton);
+    }
 
     public void clickToMaleRadio() {
         waitForElementClickable(driver, genderMaleRadio);
