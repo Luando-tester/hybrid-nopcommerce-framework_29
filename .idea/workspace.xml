@@ -4,176 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d1d3c5-fd69-4ac9-827f-7ddaa85fda4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libAllure.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libExtent3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libExtent5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libLog4J1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libReportNG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libraries.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/selenium_and_testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/selenium_server_4_29_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/assertVerify/Hard_Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/assertVerify/Soft_Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/dynamicLocator/StringFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/dynamicLocator/SystemInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaBasic/Topic_03_Null_Pointer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaBasic/Topic_04_Driver_Infor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/AbstractPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/AddressPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/IBrowser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/IServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/OrderPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSDET/javaInheritance/SidebarPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/commons/MethodListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/commons/TestNGAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/commons/VerificationFailures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/PageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/admin/AdminDashBoardPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/admin/AdminLoginPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/jquery/HomePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/jquery/PageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserAddressPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserOrderPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserRewardPointPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserSidebarPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/reportConfigs/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/reportConfigs/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/reportConfigs/ExtentTestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/reportConfigs/ReportNGListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/downloadFiles/aspectjweaver-1.9.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/downloadFiles/selenium-server-4.29.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/downloadFiles/testng-7.11.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/BasePageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/admin/AdminDashboardPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/admin/AdminLoginPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/jquery/HomePageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserAddressPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserOrderPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserRewardPointPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserSidebarPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/allure-java-commons-2.24.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/allure-model-2.24.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/allure-test-filter-2.24.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/allure-testng-2.24.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/bsh-2.0b6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/jcommander-1.72.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/slf4j-api-1.7.36.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libAllure/testng-6.14.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/bson-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/extentreports-2.41.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/freemarker-2.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/jsoup-1.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/mongodb-driver-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/mongodb-driver-core-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/sqlite-jdbc-3.8.11.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent2/testng-6.9.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/bsh-2.0b4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/bson-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/extentreports-3.1.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/freemarker-2.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/gson-2.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/httpclient-4.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/httpcore-4.4.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/httpmime-4.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/jcommander-1.48.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/jsoup-1.9.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/mongodb-driver-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/mongodb-driver-core-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent3/testng-6.9.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/bsh-2.0b4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/bson-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/extentreports-4.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/freemarker-2.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/httpclient-4.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/httpcore-4.4.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/httpmime-4.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/jcommander-1.48.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/mongodb-driver-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/mongodb-driver-core-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent4/testng-6.9.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent5/extentreports-5.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent5/freemarker-2.3.32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent5/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent5/lombok-1.18.26.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent5/reactive-streams-1.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libExtent5/rxjava-3.1.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-codec-1.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-io-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-lang3-3.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J1/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J1/log4j-1.2.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J2/log4j-api-2.23.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libLog4J2/log4j-core-2.23.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libReportNG/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libReportNG/commons-io-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libReportNG/guice-3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libReportNG/reportng-1.1.4-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libReportNG/reportng-1.1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libReportNG/velocity-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/dataTable.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/nopCommerce.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runAllureReport.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/jquery/cases/Level_11_DataTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/jquery/cases/Level_12_Upload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_07_Switch_Page_Object.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_08_Page_Navigation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_09_Switch_Url.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_10_Dynamic_Locator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_13_Assert_Verify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_14_Log4J.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_15_ExtentReport2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadFiles/DaNang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadFiles/HaNoi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadFiles/HoChiMinh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_time_backport_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/selenium_server_4_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/testng_7_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/GlobalContants.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/GlobalContants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/CustomerInfoPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/CustomerInfoPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/HomePageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/HomePageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/LoginPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/LoginPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageFactory/RegisterPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageFactory/RegisterPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/CustomerInfoPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserCustomerInfoPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserHomePO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserLoginPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/RegisterPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/users/UserRegisterPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/reportConfigs/AllureListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/reportConfigs/AllureListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/reportConfigs/ExtentListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/reportConfigs/ExtentListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hybrid-nopcommerce-framework_29.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hybrid-nopcommerce-framework_29.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/CustomerInfoPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserCustomerInfoPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserHomePageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/LoginPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserLoginPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/RegisterPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/users/UserRegisterPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/java-time-backport-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/user/Level_01_Register_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_01_Register_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/user/Level_02_BasePage_II_static_method.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_02_BasePage_II_static_method.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/user/Level_02_BasePage_init.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_02_BasePage_init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/user/Level_03_Page_Object_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_03_Page_Object_Pattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/user/Level_04_Mutilple_Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_04_Mutilple_Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/user/Level_05_PageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_05_PageFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="03d1d3c5-fd69-4ac9-827f-7ddaa85fda4a" name="Changes" comment="Update homework 19/03/2025" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,6 +97,19 @@
       <option name="presentableId" value="Default" />
       <updated>1742209430511</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update homework 19/03/2025">
+      <option name="closed" value="true" />
+      <created>1742375703900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742375703900</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update homework 19/03/2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update homework 19/03/2025" />
   </component>
 </project>
