@@ -26,5 +26,8 @@
     <orderEntry type="library" name="libExtent3" level="project" />
     <orderEntry type="library" name="libAllure" level="project" />
     <orderEntry type="library" name="aspectjweaver-1.9.20" level="project" />
+    <orderEntry type="library" name="libJIRA" level="project" />
+    <orderEntry type="library" name="libJira" level="project" />
+    <orderEntry type="library" name="libJira (2)" level="project" />
   </component>
 </module>

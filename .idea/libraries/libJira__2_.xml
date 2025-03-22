@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="libJira (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libJIRA/mockito-all-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/junit-4.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/joda-time-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/jira-rest-java-client-core-5.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/jira-client-0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/httpmime-4.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/httpcore-4.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/httpclient-4.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/ezmorph-1.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libJIRA/commons-beanutils-1.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libJIRA/mockito-all-1.9.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>

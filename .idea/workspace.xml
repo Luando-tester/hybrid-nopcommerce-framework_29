@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d1d3c5-fd69-4ac9-827f-7ddaa85fda4a" name="Changes" comment="Update homework 19/03/2025" />
+    <list default="true" id="03d1d3c5-fd69-4ac9-827f-7ddaa85fda4a" name="Changes" comment="Update homework 19/03/2025">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libJIRA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libJira__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/JiraConfig/JIRAListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/JiraConfig/JiraCreateIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/JiraConfig/JiraServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageObjects/facebook/LoginPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageObjects/facebook/PageGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/facebook/LoginPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/commons-beanutils-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/commons-codec-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/commons-httpclient-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/commons-lang-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/httpclient-4.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/httpcore-4.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/httpmime-4.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/jira-client-0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/jira-rest-java-client-core-5.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/joda-time-2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/junit-4.8.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJIRA/mockito-all-1.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/facebook.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/jQuery.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/Level_19_Pattern_Object.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/com/facebook/cases/Level_18_Undisplayed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_16_AllureReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_17_JIRA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/commons/GlobalContants.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/GlobalContants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hybrid-nopcommerce-framework_29.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hybrid-nopcommerce-framework_29.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/BasePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/BasePageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/nopCommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/nopCommerce.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,38 +77,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/dataTable.xml.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/code/hybrid-nopcommerce-framework_29/interfaces/pageUIs",
-    "last_opened_file_path": "D:/code/hybrid-nopcommerce-framework_29/downloadFiles",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/dataTable.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/nopCommerce.xml.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/code/hybrid-nopcommerce-framework_29/interfaces/pageUIs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/hybrid-nopcommerce-framework_29/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\resources" />
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\libJIRA" />
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\actions\JiraConfig" />
       <recent name="D:\code\hybrid-nopcommerce-framework_29\downloadFiles" />
       <recent name="D:\code\hybrid-nopcommerce-framework_29" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29\libAllure" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29\libExtent5" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29\libExtent4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\code\hybrid-nopcommerce-framework_29\JavaSDET\assertVerify" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.nopcommerce.uses" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/nopCommerce.xml">
     <configuration name="D:/code/hybrid-nopcommerce-framework_29/resources/dataTable.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hybrid-nopcommerce-framework_29" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/resources/dataTable.xml" />
@@ -82,8 +121,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="D:/code/hybrid-nopcommerce-framework_29/resources/nopCommerce.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hybrid-nopcommerce-framework_29" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/resources/nopCommerce.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/nopCommerce.xml" />
         <item itemvalue="TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/dataTable.xml" />
       </list>
     </recent_temporary>
@@ -105,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742375703900</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update homework 19/03/2025">
+      <option name="closed" value="true" />
+      <created>1742537584465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742537584465</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

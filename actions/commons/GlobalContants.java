@@ -35,4 +35,8 @@ public class GlobalContants {
     public static final String DATA_TEST_PATH = PROJECT_PATH + SEPARATOR + "dataTest"+ SEPARATOR ;
     public static final String ENVIRONMENT_CONFIG_PATH = PROJECT_PATH + SEPARATOR + "environmentConfig" + SEPARATOR;
 
+    public static final String JIRA_SITE_URL = "https://automationfc-vn1.atlassian.net/";
+    public static final String JIRA_USER_NAME = "donguyenthanhluan123@gmail.com";
+    public static final String JIRA_API_KEY = "ATATT3xFfGF0XgYGiSNqm2_EX32bDfra5qW2m5b9P5fOSNLGoBhuBap3iJHiaGwVUbKxPhjE6d8odny7oqA7MjHboKAKQ_Uuyo88YYWmdHkkVFNIGCK2Lmuph40eN9n7dwq5hff_lwHxneLxziN08C6rrKeCvlyS12wXXihKLWBPtbfSWI16ekA=F1F7B8AB";
+    public static final String JIRA_PROJECT_KEY = "SCRUM";
 }

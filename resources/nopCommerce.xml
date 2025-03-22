@@ -4,7 +4,7 @@
 
     <listeners>
         <listener class-name="commons.MethodListener"></listener>
-        <listener class-name="reportConfigs.AllureListener"></listener>
+        <listener class-name="JiraConfig.JIRAListener"></listener>
 
     </listeners>
     
@@ -14,7 +14,7 @@
 
         <parameter name="browser" value="FIREFOX"/>
         <classes>
-            <class name="com.nopcommerce.uses.Level_14_Log4J"/>
+            <class name="com.nopcommerce.uses.Level_17_JIRA"/>
         </classes>
     </test>
 </suite>

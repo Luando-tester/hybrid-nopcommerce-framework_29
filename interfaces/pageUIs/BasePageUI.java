@@ -8,5 +8,8 @@ public class BasePageUI {
     public static final String UPLOAD_FILE_TYPE ="CSS=input[type='file']";
     public static final String UPLOAD_BUTTON ="CSS=td>button.start";
     public static final String FILE_UPLOAD_SUCCESS_BY_FILE_NAME ="XPATH=//p[@class='name' and text()='%s']";
-
+    public static final String TEXTBOX_BY_ID = "Xpath=//input[@id='%s']";
+    public static final String CHECKBOX_BY_ID = "Xpath=//input[@id='%s']";
+    public static final String RADIO_BY_ID = "Xpath=//input[@id='%s']";
+    public static final String BUTTON_BY_TEXT ="Xpath=//button[text()='%s']";
 }
