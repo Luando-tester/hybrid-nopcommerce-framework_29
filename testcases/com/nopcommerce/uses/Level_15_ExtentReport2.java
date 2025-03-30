@@ -1,6 +1,5 @@
 package com.nopcommerce.uses;
 
-import com.aventstack.extentreports.Status;
 import commons.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -11,14 +10,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.PageGenerator;
-import pageObjects.admin.AdminDashBoardPO;
-import pageObjects.admin.AdminLoginPO;
-import pageObjects.users.*;
-import reportConfigs.ExtentTestManager;
-import reportConfigs.ExtentTestManager;
-
-import java.lang.reflect.Method;
+import pageObjects.nopcommerce.PageGenerator;
+import pageObjects.nopcommerce.admin.AdminDashBoardPO;
+import pageObjects.nopcommerce.admin.AdminLoginPO;
+import pageObjects.nopcommerce.users.*;
 
 public class Level_15_ExtentReport2 extends BaseTest {
 

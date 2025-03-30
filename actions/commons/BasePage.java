@@ -1,18 +1,19 @@
 package commons;
 
-import net.bytebuddy.agent.builder.AgentBuilder;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageObjects.*;
-import pageObjects.users.UserAddressPO;
-import pageObjects.users.UserCustomerInfoPO;
-import pageObjects.users.UserOrderPO;
-import pageObjects.users.UserRewardPointPO;
+import pageObjects.nopcommerce.PageGenerator;
+import pageObjects.nopcommerce.users.UserAddressPO;
+import pageObjects.nopcommerce.users.UserCustomerInfoPO;
+import pageObjects.nopcommerce.users.UserOrderPO;
+import pageObjects.nopcommerce.users.UserRewardPointPO;
 import pageUIs.BasePageUI;
+import pageUIs.orangehrm.BasePUI;
+import pageUIs.orangehrm.pim.employee.PersonalDetailPUI;
 import pageUIs.users.UserSidebarPageUI;
 
 import java.time.Duration;
@@ -124,6 +125,10 @@ public class BasePage {
 
 
     public void clickToElement(WebDriver driver,String locator){
+        if(driver.toString().contains("internet explorer")) {
+            clickToElementByJS(driver,locator);
+            sleepInSeconds(2);
+        }
         getElement(driver,locator).click();
     }
 
@@ -138,7 +143,14 @@ public class BasePage {
     }
 
     public void sendKeyToElement(WebDriver driver, String locator,String keyToSend){
-        getElement(driver,locator).clear();
+        Keys key = null;
+        if(GlobalContants.OS_NAME.equalsIgnoreCase("Windows")){
+            key = Keys.CONTROL;
+        }else {
+            key = Keys.COMMAND;
+        }
+        getElement(driver,locator).sendKeys(Keys.chord(key,"a",Keys.BACK_SPACE));
+        sleepInSeconds(1);
         getElement(driver,locator).sendKeys(keyToSend);
     }
 
@@ -215,9 +227,9 @@ public class BasePage {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeInSecond));
     }
     public void selectItemInCustomDropdown(WebDriver driver, String parentLocator, String childItemLocator, String expectedItem) {
-        driver.findElement(By.xpath(parentLocator)).click();
-
-        List<WebElement> allItems = new WebDriverWait(driver,Duration.ofSeconds(15)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childItemLocator)));
+        getElement(driver,parentLocator).click();
+        sleepInSeconds(2);
+        List<WebElement> allItems = new WebDriverWait(driver,Duration.ofSeconds(15)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childItemLocator)));
 
         for (WebElement item : allItems) {
             if (item.getText().trim().equals(expectedItem)) {
@@ -241,6 +253,10 @@ public class BasePage {
 
     public String getElementAttribute(WebDriver driver,String locator,String attributeName,String... restParameter){
         return getElement(driver,castParameter(locator,restParameter)).getAttribute(attributeName);
+    }
+
+    public Dimension getElementSize(WebDriver driver,String locator){
+        return getElement(driver,locator).getSize();
     }
 
     public String getElementText(WebDriver driver,String locator){
@@ -398,6 +414,22 @@ public class BasePage {
         jsExecutor.executeScript("arguments[0].click();", getElement(driver, locator));
         sleepInSeconds(3);
     }
+    public void clickToButtonByText(WebDriver driver,String buttonText){
+        String locator = null;
+        String browser = driver.toString();
+        if(browser.contains("ChromeDriver")){
+            locator = BasePageUI.CHROME_BUTTON_BY_TEXT;
+        }else if(browser.contains("FirefoxDriver")) {
+            locator = BasePageUI.FIREFOX_BUTTON_BY_TEXT;
+        }else {
+            locator = BasePageUI.EDGE_BUTTON_BY_TEXT;
+        }
+    }
+
+    public void clickToElementByJS(WebDriver driver, String locator,String... restParameter) {
+        jsExecutor.executeScript("arguments[0].click();", getElement(driver, castParameter(locator,restParameter)));
+        sleepInSeconds(3);
+    }
 
     public void scrollToElementOnTopByJS(WebDriver driver, String locator) {
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getElement(driver, locator));
@@ -482,6 +514,9 @@ public class BasePage {
 
     public void waitForElementInvisible(WebDriver driver, String locator,String... restParameter){
         new WebDriverWait(driver, Duration.ofSeconds(GlobalContants.LONG_TIMEOUT)).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(castParameter(locator,restParameter))));
+    }
+    public boolean waitForListElementInvisible(WebDriver driver, String locator){
+       return new WebDriverWait(driver, Duration.ofSeconds(GlobalContants.LONG_TIMEOUT)).until(ExpectedConditions.invisibilityOfAllElements(getListElement(driver,locator)));
     }
 
     public void uploadMultipleFiles(WebDriver driver,String... fileNames){
@@ -581,5 +616,17 @@ public class BasePage {
     public boolean isCheckboxByIDSelected(WebDriver driver, String checkboxID) {
         waitForElementSelect(driver,BasePageUI.CHECKBOX_BY_ID,checkboxID);
         return isElementSelected(driver,BasePageUI.CHECKBOX_BY_ID,checkboxID);
+    }
+    public Set<Cookie> getAllCookies(WebDriver driver){
+        return driver.manage().getCookies();
+    }
+    public void setCookies(WebDriver driver,Set<Cookie> cookies){
+        for (Cookie cookie : cookies){
+            driver.manage().addCookie(cookie);
+        }
+    }
+
+    public boolean waitAllLoadIconInvisible(WebDriver driver) {
+       return waitForListElementInvisible(driver, BasePUI.LOADING_ICON);
     }
 }

@@ -2,19 +2,19 @@ package com.nopcommerce.uses;
 
 import JiraConfig.JiraCreateIssue;
 import commons.BaseTest;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import jdk.jfr.Description;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pageObjects.PageGenerator;
-import pageObjects.admin.AdminDashBoardPO;
-import pageObjects.admin.AdminLoginPO;
-import pageObjects.users.*;
+import pageObjects.nopcommerce.PageGenerator;
+import pageObjects.nopcommerce.admin.AdminDashBoardPO;
+import pageObjects.nopcommerce.admin.AdminLoginPO;
+import pageObjects.nopcommerce.users.*;
+
 
 public class Level_17_JIRA extends BaseTest {
 
@@ -24,6 +24,10 @@ public class Level_17_JIRA extends BaseTest {
     public void beforeClass(String browserName,String userUrl,String adminUrl) {
         this.userUrl = userUrl;
         this.adminUrl =  adminUrl;
+        ChromeOptions chromeOptions =  new ChromeOptions();
+        chromeOptions.addArguments("--user-data-dir=C:\\Users\\THANH.LUAN\\AppData\\Local\\Google\\Chrome\\User Data\\");
+        chromeOptions.addArguments("--profile-directory=Profile 10");
+        driver = new ChromeDriver(chromeOptions);
         driver = getBroswerDriver(browserName,userUrl);
         homePage = PageGenerator.getUserHomePage(driver);
         firstname="John";
@@ -52,13 +56,13 @@ public class Level_17_JIRA extends BaseTest {
         log.info("User_01_Register- Step 04 : Enter To Lastname Textbox" + lastName);
         registerPage.enterLastNameTextbox(lastName);
 
-        log.info("User_01_Register- Step 05 : Select Day DropDown" + day);
-        registerPage.selectDayDropDown(day);
-        log.info("User_01_Register- Step 06 : Select Month DropDown" + month);
-        registerPage.selectMonthDropDown(month);
-
-        log.info("User_01_Register- Step 07 : Select Year DropDown" + year);
-        registerPage.selectYearDropDown(year);
+//        log.info("User_01_Register- Step 05 : Select Day DropDown" + day);
+//        registerPage.selectDayDropDown(day);
+//        log.info("User_01_Register- Step 06 : Select Month DropDown" + month);
+//        registerPage.selectMonthDropDown(month);
+//
+//        log.info("User_01_Register- Step 07 : Select Year DropDown" + year);
+//        registerPage.selectYearDropDown(year);
 
         log.info("User_01_Register- Step 08 : Enter Email Textbox" + emailAddress);
         registerPage.enterEmailTextBox(emailAddress);
