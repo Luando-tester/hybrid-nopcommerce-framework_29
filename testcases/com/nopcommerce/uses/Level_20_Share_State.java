@@ -106,9 +106,9 @@ public class Level_20_Share_State extends BaseTest {
 
 
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void afterClass(){
-        driver.quit();
+        closeBrowserDriver();
     }
 
     private WebDriver driver;

@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/testcases" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/JavaSDET" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/interfaces" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/testdata" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -29,5 +30,7 @@
     <orderEntry type="library" name="libJIRA" level="project" />
     <orderEntry type="library" name="libJira" level="project" />
     <orderEntry type="library" name="libJira (2)" level="project" />
+    <orderEntry type="library" name="libFaker" level="project" />
+    <orderEntry type="library" name="libJackson" level="project" />
   </component>
 </module>

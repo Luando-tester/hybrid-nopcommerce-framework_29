@@ -1,0 +1,26 @@
+package employee;
+
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import commons.GlobalContants;
+import data.UserData;
+
+import java.io.File;
+import java.util.List;
+
+public class Employee {
+    private String name;
+    private String position;
+    private List<String> skilltree;
+    private Address address;
+    public static Employee getEmployee(){
+        try{
+            ObjectMapper mapper =  new ObjectMapper();
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
+            return mapper.readValue(new File(GlobalContants.DATA_TEST_PATH + "Employee.json"),Employee.class);
+        }catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import pageUIs.users.UserHomePageUI;
 import pageUIs.users.UserLoginPageUI;
 import org.openqa.selenium.WebDriver;
 import pageUIs.users.UserRegisterPageUI;
+import pojo.UserInfo;
 
 public class UserLoginPO extends BasePage {
     private WebDriver driver;
@@ -45,4 +46,10 @@ public class UserLoginPO extends BasePage {
     }
 
 
+    public UserHomePO enterToLoginForm(UserInfo userInfo) {
+        enterToEmailTextBox(userInfo.getEmailAddress());
+        enterToPasswordTextBox(userInfo.getPassword());
+        clickToLoginButton();
+        return PageGenerator.getUserHomePage(driver);
+    }
 }

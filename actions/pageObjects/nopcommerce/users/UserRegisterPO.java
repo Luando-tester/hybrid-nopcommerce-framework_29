@@ -5,6 +5,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import pageObjects.nopcommerce.PageGenerator;
 import pageUIs.users.UserRegisterPageUI;
+import pojo.UserInfo;
 
 public class UserRegisterPO extends BasePage {
     private WebDriver driver;
@@ -108,5 +109,25 @@ public class UserRegisterPO extends BasePage {
         waitForElementClickable(driver,UserRegisterPageUI.LOGOUT_LINK);
         clickToElement(driver,UserRegisterPageUI.LOGOUT_LINK);
         return PageGenerator.getUserHomePage(driver);
+    }
+
+    public void enterRegisterForm(UserInfo userInfo) {
+        clickToMaleRadio();
+        enterToFirstNameTextbox(userInfo.getFirstName());
+        enterLastNameTextbox(userInfo.getLastName());
+        enterEmailTextBox(userInfo.getEmailAddress());
+        enterToCompanyTextBox(userInfo.getCompanyName());
+        enterToPasswordTextBox(userInfo.getPassword());
+        enterToConfirmPasswordTextBox(userInfo.getPassword());
+    }
+
+    public void enterToRegister(String firstName, String lastName, String emailAddress, String companyName, String password) {
+        clickToMaleRadio();
+        enterToFirstNameTextbox(firstName);
+        enterLastNameTextbox(lastName);
+        enterEmailTextBox(emailAddress);
+        enterToCompanyTextBox(companyName);
+        enterToPasswordTextBox(password);
+        enterToConfirmPasswordTextBox(password);
     }
 }

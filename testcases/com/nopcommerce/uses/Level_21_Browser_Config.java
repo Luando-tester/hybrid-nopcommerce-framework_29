@@ -106,9 +106,9 @@ public class Level_21_Browser_Config extends BaseTest {
 
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void afterClass(){
-        driver.quit();
+        closeBrowserDriver();
     }
 
     private WebDriver driver;

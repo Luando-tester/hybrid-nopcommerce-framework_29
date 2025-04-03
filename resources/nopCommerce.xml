@@ -4,27 +4,22 @@
 
     <listeners>
         <listener class-name="commons.MethodListener"></listener>
-        <listener class-name="JiraConfig.JIRAListener"></listener>
 
     </listeners>
     
     <parameter name="userUrl" value="https://demo.nopcommerce.com"/>
     <parameter name="adminUrl" value="https://admin-demo.nopcommerce.com"/>
-    <test name="Run on Chrome browser" preserve-order="true">
+    <parameter name="firstname" value="John" />
+    <parameter name="lastname" value="Philip" />
+    <parameter name="email" value="John.Philip" />
+    <parameter name="company" value="Continental" />
+    <parameter name="password" value="12345678" />
 
-        <parameter name="browser" value="hfirefox" />
+    <test name="Run on Firefox browser">
+        <parameter name="browser" value="chrome" />
+
         <classes>
-<!--            <class name="com.nopcommerce.com.Login"/>-->
-            <class name="com.nopcommerce.uses.Level_21_Browser_Config"/>
-        </classes>
-    </test>
-
-    <test name="Run on Chrome browser" preserve-order="true">
-
-        <parameter name="browser" value="hchrome" />
-        <classes>
-            <!--            <class name="com.nopcommerce.com.Login"/>-->
-            <class name="com.nopcommerce.uses.Level_21_Browser_Config"/>
+            <class name="com.nopcommerce.uses.Level_24_Data_Faker"/>
         </classes>
     </test>
 </suite>

@@ -4,69 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d1d3c5-fd69-4ac9-827f-7ddaa85fda4a" name="Changes" comment="Update homework 22/03/2025">
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/DashboardPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/LoginPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/PageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/configurations/CustomeFieldsPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/configurations/DataImportPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/configurations/OptionalFieldsPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/configurations/TerminationReasonsPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/employee/AddNewEmployeePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/employee/ContactDetailsPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/employee/EmergencyContactPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/employee/EmployeeListPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/employee/EmployeeTabs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/employee/PersonalDetailPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/reports/AddNewReportPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/pageObjects/orangehrm/pim/reports/ReportSearchPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/BasePUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/DashboardPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/LoginPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/pim/employee/AddNewPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/pim/employee/ContactDetalsPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/pim/employee/EmergencyContactPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/pim/employee/EmployeeListPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/pim/employee/EmployeeTabsUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/orangehrm/pim/employee/PersonalDetailPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/com/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_20_Share_State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_21_Browser_Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/com/orangehrm/PIM_01_Employee.java" afterDir="false" />
+    <list default="true" id="03d1d3c5-fd69-4ac9-827f-7ddaa85fda4a" name="Changes" comment="Update homework 30/03/2025">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libFaker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libJackson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSDET/fakeData/Topic_02_Faker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSDET/getterSetter/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSDET/getterSetter/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSDET/getterSetter/UserGetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSDET/getterSetter/UserLombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSDET/getterSetter/UserSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageObjects/saucelabs/InventoryPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageObjects/saucelabs/LoginPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/pageObjects/saucelabs/PageGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/utilities/FakeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/saucelabs/InventoryPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces/pageUIs/saucelabs/LoginPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libFaker/commons-lang3-3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libFaker/generex-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libFaker/javafaker-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libFaker/snakeyaml-1.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJackson/jackson-annotations-2.15.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJackson/jackson-core-2.15.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libJackson/jackson-databind-2.15.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/orangeHRM.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_22_Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_24_Data_Faker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_25_Manage_Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/Employee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/Product.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/User.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/UserLevel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/data/ProductData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/data/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/data/UserLevelData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/data/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/employee/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/employee/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/pojo/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/testing.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/commons/BrowserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/commons/BrowserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/PageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/PageGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/admin/AdminDashBoardPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/admin/AdminDashBoardPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/admin/AdminLoginPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/admin/AdminLoginPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserAddressPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserAddressPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserCustomerInfoPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserCustomerInfoPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserHomePO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserHomePO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserLoginPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserLoginPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserOrderPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserOrderPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserRegisterPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserRegisterPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserRewardPointPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserRewardPointPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/pageObjects/users/UserSidebarPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserSidebarPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserDriver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/browserDriver/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/pageUIs/BasePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/pageUIs/BasePageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserLoginPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserLoginPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserRegisterPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/actions/pageObjects/nopcommerce/users/UserRegisterPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hybrid-nopcommerce-framework_29.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hybrid-nopcommerce-framework_29.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/nopCommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/nopCommerce.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/Level_19_Pattern_Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_19_Pattern_Object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/facebook/cases/Level_18_Undisplayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/facebook/cases/Level_18_Undisplayed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_03_Page_Object_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_03_Page_Object_Pattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_04_Mutilple_Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_04_Mutilple_Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_06_Page_Generator_02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_07_Switch_Page_Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_07_Switch_Page_Object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_08_Page_Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_08_Page_Navigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_09_Switch_Url.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_09_Switch_Url.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_10_Dynamic_Locator.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_10_Dynamic_Locator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_13_Assert_Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_13_Assert_Verify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_14_Log4J.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_14_Log4J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_15_ExtentReport2.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_15_ExtentReport2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_16_AllureReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_16_AllureReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_17_JIRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_17_JIRA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_20_Share_State.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_20_Share_State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_21_Browser_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/com/nopcommerce/uses/Level_21_Browser_Config.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +97,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/code/hybrid-nopcommerce-framework_29/interfaces/pageUIs",
-    "last_opened_file_path": "D:/code/hybrid-nopcommerce-framework_29/resources",
+    "last_opened_file_path": "D:/code/hybrid-nopcommerce-framework_29/testdata",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -123,21 +106,22 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\testdata" />
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\testdata\pojo" />
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\libJackson" />
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\libFaker" />
       <recent name="D:\code\hybrid-nopcommerce-framework_29\resources" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29\libJIRA" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29\actions\JiraConfig" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29\downloadFiles" />
-      <recent name="D:\code\hybrid-nopcommerce-framework_29" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\hybrid-nopcommerce-framework_29\testdata" />
       <recent name="D:\code\hybrid-nopcommerce-framework_29\JavaSDET\assertVerify" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="data" />
       <recent name="com.nopcommerce.uses" />
       <recent name="pageUIs.orangehrm" />
       <recent name="pageUIs.orangehrm.pim" />
       <recent name="com.orangehrm" />
-      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.D:/code/hybrid-nopcommerce-framework_29/resources/nopCommerce.xml">
@@ -201,12 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1742637637339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update homework 30/03/2025">
+      <option name="closed" value="true" />
+      <created>1743321726013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743321726013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update homework 19/03/2025" />
     <MESSAGE value="Update homework 22/03/2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update homework 22/03/2025" />
+    <MESSAGE value="Update homework 30/03/2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update homework 30/03/2025" />
   </component>
 </project>
