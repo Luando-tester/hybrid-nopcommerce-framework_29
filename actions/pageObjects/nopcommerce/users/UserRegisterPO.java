@@ -7,6 +7,8 @@ import pageObjects.nopcommerce.PageGenerator;
 import pageUIs.users.UserRegisterPageUI;
 import pojo.UserInfo;
 
+import java.util.List;
+
 public class UserRegisterPO extends BasePage {
     private WebDriver driver;
     public UserRegisterPO(WebDriver driver){
@@ -129,5 +131,11 @@ public class UserRegisterPO extends BasePage {
         enterToCompanyTextBox(companyName);
         enterToPasswordTextBox(password);
         enterToConfirmPasswordTextBox(password);
+    }
+
+    public void isLanguageDisplayed(List<String> skilltree) {
+        for(String skill: skilltree){
+            System.out.println(skill);
+        }
     }
 }

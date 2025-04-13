@@ -1,5 +1,7 @@
 package commons;
 
+import org.bouncycastle.pqc.crypto.util.PQCOtherInfoGenerator;
+
 public class GlobalContants {
     public static final String PROJECT_PATH = System.getProperty("user.dir");
     public static final String OS_NAME = System.getProperty("os.name");
@@ -39,4 +41,16 @@ public class GlobalContants {
     public static final String JIRA_USER_NAME = "donguyenthanhluan123@gmail.com";
     public static final String JIRA_API_KEY = "ATATT3xFfGF0XgYGiSNqm2_EX32bDfra5qW2m5b9P5fOSNLGoBhuBap3iJHiaGwVUbKxPhjE6d8odny7oqA7MjHboKAKQ_Uuyo88YYWmdHkkVFNIGCK2Lmuph40eN9n7dwq5hff_lwHxneLxziN08C6rrKeCvlyS12wXXihKLWBPtbfSWI16ekA=F1F7B8AB";
     public static final String JIRA_PROJECT_KEY = "SCRUM";
+
+    public static final String BROWSER_USERNAME = "automationfc1";
+    public static final String BROWSER_AUTOMATE_KEY = "HzcRC4Q1fzuQhRJYSkhz";
+    public static final String BROWSER_STACK_URL = "https://" + BROWSER_USERNAME + ":" + BROWSER_AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+    public static final String SAUCE_USERNAME = "oauth-daominhdam-84f72";
+    public static final String SAUCE_AUTOMATE_KEY = "2c7c9f48-ecf6-4e95-a15a-2f8e0d43dc1f";
+    public static final String SAUCE_DATA_CENTER_ENDPOINT = "eu-central-1";
+    public static final String SAUCE_URL = "https://" + SAUCE_USERNAME + ":" + SAUCE_AUTOMATE_KEY + "@ondemand." +SAUCE_DATA_CENTER_ENDPOINT +  ".saucelabs.com:443/wd/hub";
+
+    public static final String BITBAR_AUTOMATE_KEY = "2uj8qEhFy28N2MmNbWVyoMUBT2A2iQe";
+    public static final String BITBAR_EU_URL = "https://" + BROWSER_USERNAME + ":" + BROWSER_AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 }

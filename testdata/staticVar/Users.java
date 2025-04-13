@@ -1,4 +1,4 @@
-package data;
+package staticVar;
 
 public class Users {
     public class RegisterLogin {

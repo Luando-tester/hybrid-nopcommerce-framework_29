@@ -3,9 +3,7 @@ package commons;
 import com.google.common.util.concurrent.Service;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +17,7 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,6 +27,8 @@ import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.Provider;
@@ -212,6 +213,191 @@ public class BaseTest {
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
         return  driver;
+    }
+    protected WebDriver getBroswerDriverGrid(String browserName,String url,String osName,String ipAddress,String portName){
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+
+        Capabilities capabilities = null;
+        switch (browserList){
+            case FIREFOX :
+                capabilities = new FirefoxOptions();
+                break;
+            case CHROME :
+                capabilities = new ChromeOptions();
+                break;
+            case EDGE :
+                capabilities = new EdgeOptions();
+                break;
+            case SAFARI:
+                capabilities = new SafariOptions();
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid");
+        }
+        try {
+            driver = new RemoteWebDriver(new URL(String.format("http://%s:%s/",ipAddress,portName)),capabilities);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+        return  driver;
+    }
+    protected WebDriver getBroswerDriver(String browserName,String url,String osName,String ipAddress,String portName){
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        Capabilities capabilities =  null;
+        Platform platform = null;
+        if(osName.toLowerCase().contains("windows")) {
+            platform = Platform.WINDOWS;
+        } else {
+            platform = Platform.MAC;
+        }
+        switch (browserName){
+            case "firefox":
+                FirefoxOptions fOptions = new FirefoxOptions();
+                fOptions.setCapability(CapabilityType.PLATFORM_NAME,platform);
+                capabilities = fOptions;
+                break;
+            case "chrome":
+                ChromeOptions cOptions = new ChromeOptions();
+                cOptions.setCapability(CapabilityType.PLATFORM_NAME,platform);
+                capabilities = cOptions;
+                break;
+            case "edge":
+                EdgeOptions eOptions = new EdgeOptions();
+                eOptions.setCapability(CapabilityType.PLATFORM_NAME,platform);
+                capabilities = eOptions;
+                break;
+            case "safari":
+                SafariOptions sOptions = new SafariOptions();
+                sOptions.setCapability(CapabilityType.PLATFORM_NAME,platform);
+                capabilities = sOptions;
+                break;
+            default:
+                throw new RuntimeException("Browser is not valid");
+        }
+        try {
+            driver = new RemoteWebDriver(new URL(String.format("http://%s:%s/",ipAddress,portName)),capabilities);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+        return  driver;
+    }
+    protected WebDriver getBroswerDriverBrowserStack(String url,String osName,String osVersion,String browserName,String browserVersion){
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        MutableCapabilities capabilities = new MutableCapabilities();
+        HashMap<String,Object> bstackOptions = new HashMap<String,Object>();
+        capabilities.setCapability("browserName","Chrome");
+        bstackOptions.put("os",osName);
+        bstackOptions.put("osVersion",osVersion);
+        bstackOptions.put("browserVersion",browserVersion);
+        bstackOptions.put("userName",GlobalContants.BROWSER_USERNAME);
+        bstackOptions.put("accessKey",GlobalContants.BROWSER_AUTOMATE_KEY);
+
+//        bstackOptions.put("consoleLogs","info");
+        bstackOptions.put("seleniumVersion","4.29.0");
+        capabilities.setCapability("bstack:options",bstackOptions);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalContants.BROWSER_STACK_URL),capabilities);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+        return  driver;
+    }
+    protected WebDriver getBroswerDriverSauceLab(String url,String platformName,String browserName,String browserVersion){
+        MutableCapabilities capability = null;
+
+        switch (browserName) {
+            case "firefox":
+                FirefoxOptions fOptions = new FirefoxOptions();
+                fOptions.setPlatformName(platformName);
+                fOptions.setBrowserVersion(browserVersion);
+                capability = fOptions;
+                break;
+            case "chrome":
+                ChromeOptions cOptions = new ChromeOptions();
+                cOptions.setPlatformName(platformName);
+                cOptions.setBrowserVersion(browserVersion);
+                capability = cOptions;
+                break;
+            case "edge":
+                EdgeOptions eOptions = new EdgeOptions();
+                eOptions.setPlatformName(platformName);
+                eOptions.setBrowserVersion(browserVersion);
+                capability = eOptions;
+                break;
+            case "safari":
+                SafariOptions sOptions = new SafariOptions();
+                sOptions.setPlatformName(platformName);
+                sOptions.setBrowserVersion(browserVersion);
+                capability = sOptions;
+                break;
+            default:
+                throw new RuntimeException("Browser is not valid!");
+        }
+
+        HashMap<String, String> sauceOptions = new HashMap<String, String>();
+        sauceOptions.put("username", GlobalContants.SAUCE_USERNAME);
+        sauceOptions.put("accessKey", GlobalContants.SAUCE_AUTOMATE_KEY);
+        sauceOptions.put("build", "automation-fc-build");
+        sauceOptions.put("name", "Run on " + platformName + " | " + browserName + " | " + browserVersion);
+
+        capability.setCapability("sauce:options", sauceOptions);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalContants.SAUCE_URL), capability);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+        return  driver;
+    }
+    protected WebDriver getBroswerDriverBitbar(String url,String platformName,String platformVersion,String browserName,String browserVersion){
+        MutableCapabilities capability = null;
+        HashMap<String,String> bitbarOptions = new HashMap<String,String>();
+        capability.setCapability("browserName",browserName);
+        capability.setCapability("browserName",browserName);
+        capability.setCapability("browserVersion",browserVersion);
+
+        bitbarOptions.put("project","NopCommerce");
+        bitbarOptions.put("apiKey",GlobalContants.BITBAR_AUTOMATE_KEY);
+        bitbarOptions.put("osVersion",platformVersion);
+        bitbarOptions.put("resolution","1920x1000");
+        bitbarOptions.put("seleniumVersion","4");
+
+        capability.setCapability("bitbar:options",bitbarOptions);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalContants.BITBAR_EU_URL), capability);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+        return  driver;
+    }
+    private String getUrlEnvironmentName(String environmentName){
+        String url;
+        switch (environmentName){
+            case "dev":
+                url = "https://demo.nopcommerce.com/";
+                break;
+            case "testing":
+                url = "https://testing.nopcommerce.com";
+                break;
+            case "staging":
+                url = "https://staging.nopcommerce.com";
+                break;
+            default:
+                throw new RuntimeException("Environment name is not valid.");
+        }
+        return  url;
     }
     protected boolean verifyTrue(boolean condition) {
         boolean status = true;

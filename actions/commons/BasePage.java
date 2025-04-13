@@ -248,11 +248,14 @@ public class BasePage {
     }
 
     public String getElementAttribute(WebDriver driver,String locator,String attributeName){
-       return getElement(driver,locator).getAttribute(attributeName);
+       return getElement(driver,locator).getDomAttribute(attributeName);
+    }
+    public String getElementAttribute(WebElement element,String attributeName){
+        return element.getDomAttribute(attributeName);
     }
 
     public String getElementAttribute(WebDriver driver,String locator,String attributeName,String... restParameter){
-        return getElement(driver,castParameter(locator,restParameter)).getAttribute(attributeName);
+        return getElement(driver,castParameter(locator,restParameter)).getDomAttribute(attributeName);
     }
 
     public Dimension getElementSize(WebDriver driver,String locator){

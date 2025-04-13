@@ -4,7 +4,9 @@
   "skilltree":[
     "Java",
     "Python",
-    "JavaScript"
+    "JavaScript",
+    "C#",
+    "Ruby"
   ],
   "address": {
     "street": "Street",

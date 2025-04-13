@@ -1,5 +1,6 @@
 package employee;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import commons.GlobalContants;
@@ -9,9 +10,13 @@ import java.io.File;
 import java.util.List;
 
 public class Employee {
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("position")
     private String position;
+    @JsonProperty("skilltree")
     private List<String> skilltree;
+    @JsonProperty("address")
     private Address address;
     public static Employee getEmployee(){
         try{
@@ -23,4 +28,32 @@ public class Employee {
             return null;
         }
     }
+    public String getPosition() {
+        return position;
+    }
+
+    public List<String> getSkilltree() {
+        return skilltree;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public Address getAddress(){
+        return address;
+    }
+    public static class Address{
+        @JsonProperty("street")
+        private String streetName;
+        @JsonProperty("streetNo")
+        private String streetNumber;
+
+        public String getStreetName() {
+            return streetName;
+        }
+        public String getStreetNumber() {
+            return streetNumber;
+        }
+    }
+
 }
