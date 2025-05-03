@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="NopCommerce Automation Testing" parallel="none" thread-count="2">
+
+    <listeners>
+        <listener class-name="commons.MethodListener"></listener>
+
+    </listeners>
+
+    <test name="Run on CHROME">
+        <parameter name="osName" value="windows"/>
+        <parameter name="osVersion" value="11"/>
+        <parameter name="browserName" value="Chrome" />
+        <parameter name="browserVersion" value="134" />
+        <classes>
+            <class name="com.nopcommerce.uses.Level_28_Cloud_SauceLab"/>
+        </classes>
+    </test>
+</suite>

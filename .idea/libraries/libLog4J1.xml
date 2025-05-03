@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="libLog4J1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libLog4J1/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libLog4J1/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libLog4J1/commons-lang3-3.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libLog4J1/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libLog4J1/commons-codec-1.11.jar!/" />
+      <root url="file://$PROJECT_DIR$/libLog4J1" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libLog4J1" recursive="false" />
+  </library>
+</component>

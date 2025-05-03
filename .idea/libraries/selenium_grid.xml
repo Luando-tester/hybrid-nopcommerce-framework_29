@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="selenium-grid">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libraries/selenium-server-4.31.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

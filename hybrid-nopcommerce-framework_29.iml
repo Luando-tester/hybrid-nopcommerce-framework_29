@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/actions" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/browserDriver" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/browserExtensions" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/testcases" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaSDET" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/interfaces" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/testdata" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="testng-7.8.0" level="project" />
+    <orderEntry type="library" exported="" name="selenium-server-4.20.0" level="project" />
+    <orderEntry type="library" exported="" name="java-time-backport-1.0.0" level="project" />
+    <orderEntry type="library" name="selenium-server-4.29.0" level="project" />
+    <orderEntry type="library" name="selenium-and-testng" level="project" />
+    <orderEntry type="library" name="libLog4J1" level="project" />
+    <orderEntry type="library" name="log4j2" level="project" />
+    <orderEntry type="library" name="libReportNG" level="project" />
+    <orderEntry type="library" name="libExtent5" level="project" />
+    <orderEntry type="library" name="libExtent3" level="project" />
+    <orderEntry type="library" name="libAllure" level="project" />
+    <orderEntry type="library" name="aspectjweaver-1.9.20" level="project" />
+    <orderEntry type="library" name="libJIRA" level="project" />
+    <orderEntry type="library" name="libJira" level="project" />
+    <orderEntry type="library" name="libJira (2)" level="project" />
+    <orderEntry type="library" name="libFaker" level="project" />
+    <orderEntry type="library" name="libJackson" level="project" />
+    <orderEntry type="library" name="libExcel" level="project" />
+    <orderEntry type="library" name="libOwner" level="project" />
+    <orderEntry type="library" name="selenium-grid" level="project" />
+    <orderEntry type="library" name="AWSlib" level="project" />
+    <orderEntry type="library" name="AWSlib (2)" level="project" />
+  </component>
+</module>
