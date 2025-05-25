@@ -1,6 +1,8 @@
 package commons;
 
+import browserFactory.*;
 import com.google.common.util.concurrent.Service;
+import environmentFactory.*;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.*;
@@ -89,129 +91,31 @@ public class BaseTest {
         File extensionFilePath =  null;
         BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
         switch (browserList){
-            case FIREFOX :
-//                FirefoxOptions fOptions = new FirefoxOptions();
-//                fOptions.addPreference("geo.enabled",false);
-//                fOptions.addPreference("geo.provider.use_corelocation",false);
-//                driver = new FirefoxDriver(fOptions);
-//                System.setProperty(GeckoDriverService.GECKO_DRIVER_EXE_PROPERTY,GlobalContants.BROWSER_LOG_PATH + "FirefoxPropertyLog.log");
-//                FirefoxDriverService ffService = new GeckoDriverService.Builder().withLogLevel(FirefoxDriverLogLevel.DEBUG).build();
-//                FirefoxDriverService ffService = new GeckoDriverService.Builder().withLogOutput(System.out).build();
-//                FirefoxDriverService ffService  = new GeckoDriverService.Builder().withLogFile(new File(GlobalContants.BROWSER_LOG_PATH + "FirefoxLog.log")).build();
-//                driver = new FirefoxDriver();
-//                Path xpiPath = Paths.get(GlobalContants.BROWSER_EXTENSION_PATH + "wappalyzer.xpi");
-//                FirefoxDriver ffDriver = (FirefoxDriver) driver;
-//                ffDriver.installExtension(xpiPath);
-//                driver = ffDriver;
-//                driver = new FirefoxDriver(ffService);
-                FirefoxOptions fOptions = new FirefoxOptions();
-//                fOptions.addArguments("-private");
-//                driver =  new FirefoxDriver(fOptions);
-
-//                DesiredCapabilities caps = new DesiredCapabilities();
-//                FirefoxOptions optionss = new FirefoxOptions();
-//                optionss.addArguments("-private");
-//                caps.setCapability("moz:firefoxOptions",optionss);
-                FirefoxProfile fffProfile = new FirefoxProfile();
-
-                fffProfile.setPreference("browser.private.browsing.autostart",true);
-                fffProfile.setPreference("browser.privatebrowsing.autostart",true);
-                fffProfile.setAssumeUntrustedCertificateIssuer(false);
-                fffProfile.setAcceptUntrustedCertificates(true);
-                fOptions.setProfile(fffProfile);
-                fOptions.addArguments("-private");
-                driver =  new FirefoxDriver(fOptions);
-                Dimension dimension = new Dimension(1920,1080);
-                driver.manage().window().setSize(dimension);
+            case FIREFOX:
+                driver = new FirefoxBrowserManager().getDriver();
                 break;
             case HFIREFOX :
-                FirefoxOptions options = new FirefoxOptions();
-                options.addArguments("-headless");
-                options.addArguments("window-size=1920x1080");
-                driver = new FirefoxDriver(options);
+                driver = new FireFoxHeadlessBrowserManager().getDriver();
                 break;
             case CHROME :
-//                Map<String,Object> prefs =  new HashMap<String, Object>();
-//                prefs.put("profile.default_content_setting_values.notfications",2);
-//                prefs.put("credentials_enable_service",false);
-//                prefs.put("profile.password_manager_enabled",false);
-//                prefs.put("autonfill.profile_enabled",false);
-
-//                ChromeOptions optionss =  new ChromeOptions();
-//                optionss.setExperimentalOption("prefs",prefs);
-//                optionss.addArguments("--disable-notifications");
-//                driver = new ChromeDriver(optionss);
-//                System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY,GlobalContants.BROWSER_LOG_PATH + "ChromePropertyLog.log");
-//                ChromeDriverService cService = new ChromeDriverService.Builder().withLogLevel(ChromiumDriverLogLevel.DEBUG).build();
-//                ChromeDriverService cService = new ChromeDriverService.Builder().withLogOutput(System.out).build();
-//                ChromeDriverService cService  = new ChromeDriverService.Builder().withLogFile(new File(GlobalContants.BROWSER_LOG_PATH + "ChromeLog.log")).build();
-//                ChromeOptions cOptions = new ChromeOptions();
-//                path = Paths.get(GlobalContants.BROWSER_EXTENSION_PATH + "Wappalyzer.crx");
-//                extensionFilePath = new File(path.toUri());
-//                cOptions.addExtensions(extensionFilePath);
-//                driver = new ChromeDriver(cService);
-                ChromeOptions chromeOptionss =  new ChromeOptions();
-                chromeOptionss.addArguments("--user-data-dir=C:\\Users\\THANH.LUAN\\AppData\\Local\\Google\\Chrome\\User Data\\");
-                chromeOptionss.addArguments("--profile-directory=Profile 10");
-                driver = new ChromeDriver(chromeOptionss);
+                driver = new ChromeBrowserManager().getDriver();
                 break;
             case HCHROME :
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("-headless");
-                chromeOptions.addArguments("window-size=1920x1080");
-                driver = new ChromeDriver(chromeOptions);
+                driver = new ChromeHeadlessBrowserManager().getDriver();
                 break;
             case COCCOC:
-                ChromeOptions ccOptions = new ChromeOptions();
-                ccOptions.setBinary("C:\\ProgarmFiles\\CocCoc\\Browser\\Application\\browser.exe");
-                driver = new ChromeDriver(ccOptions);
+                driver = new CocCocBrowserManager().getDriver();
             case EDGE :
-                EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("--inprivate");
-                driver = new EdgeDriver(edgeOptions);
-//                EdgeOptions edgeOptionss =  new EdgeOptions();
-//                edgeOptionss.addArguments("--disable-notifications");
-//                driver = new EdgeDriver(edgeOptionss);
-//                System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY,GlobalContants.BROWSER_LOG_PATH + "ChromePropertyLog.log");
-//                EdgeDriverService edgeService = new EdgeDriverService.Builder().withLoglevel(ChromiumDriverLogLevel.DEBUG).build();
-//                EdgeDriverService edgeService = new EdgeDriverService.Builder().withLogOutput(System.out).build();
-//                EdgeDriverService ieService  = new EdgeDriverService.Builder().withLogFile(new File(GlobalContants.BROWSER_LOG_PATH + "EdgeLog.log")).build();
-//                EdgeOptions edgeOptions = new EdgeOptions();
-//                path = Paths.get(GlobalContants.BROWSER_EXTENSION_PATH + "Wappalyzer.crx");
-//                extensionFilePath = new File(path.toUri());
-//                edgeOptions.addExtensions(extensionFilePath);
-//                driver = new EdgeDriver(edgeService);
+                driver = new EdgeBrowserManager().getDriver();
                 break;
             case HEDGE :
-                EdgeOptions egOptions = new EdgeOptions();
-                egOptions.addArguments("-headless");
-                egOptions.addArguments("window-size=1920x1080");
-                driver = new EdgeDriver(egOptions);
+                driver = new EdgeHeadlessBrowserManager().getDriver();
                 break;
             case IE:
-//                DesiredCapabilities capabilities =  new DesiredCapabilities();
-//                capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
-//                capabilities.setCapability(CapabilityType.ELEMENT_SCROLL_BEHAVIOR,true);
-//                capabilities.setCapability(InternetExplorerDriver.NATIVE_EVENTS,false);
-//                capabilities.setCapability("ignoreProtectModeSettings",true);
-//                capabilities.setCapability("ignioreZoomSettings",true);
-//                capabilities.setCapability("requireWindowFocus",true);
-//                capabilities.setJavascriptEnable(true);
-//                capabilities.setCapability("enableElementCacheCleanup",true);
-//                capabilities.setBrowserName("internet explorer");
-//                capabilities.setPlatform(org.openqa.selenium.Platform.ANY);
-//                driver = new InternetExplorerDriver(capabilities);
-//                InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-//                driver = new InternetExplorerDriver(ieOptions);
-                InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-                ieOptions.destructivelyEnsureCleanSession();
-                ieOptions.ignoreZoomSettings();
-                ieOptions.introduceFlakinessByIgnoringSecurityDomains();
-                driver = new InternetExplorerDriver(ieOptions);
+                driver = new IEBrowserManager().getDriver();
                 break;
             case SAFARI:
-                SafariOptions sOptions = new SafariOptions();
-                driver = new SafariDriver(sOptions);
+                driver = new SafariBrowserManager().getDriver();
                 break;
             default:
                 throw new RuntimeException("Browser name is not valid");
@@ -483,6 +387,39 @@ public class BaseTest {
             e.printStackTrace();
         }
         driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
+        return  driver;
+    }
+    protected WebDriver getBrowserDriver(String environmentName,String url,String osName,String osVersion,String browserName,String browserVersion,String ipAddress,String portNumber){
+        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+        EnvironemtnList environemtnList = EnvironemtnList.valueOf(environmentName.toUpperCase());
+
+        switch (environemtnList){
+            case LOCAL:
+                driver = new LocalEnvironmentManager(browserName).createDriver();
+                break;
+            case GRID:
+                driver =new GridEnvironmentManager(browserName,osName,ipAddress,portNumber).createDriver();
+                break;
+            case BROWSERSTACK:
+                driver = new BrowserStackEnvironmentManager(osName,osVersion,browserName,browserVersion).createDriver();
+                break;
+            case SAUCELAB:
+                driver = new SauceEnvironmentManager(osName,browserName,browserVersion).createDriver();
+                break;
+            case BITBAR:
+                driver = new B(environmentName).createDriver();
+            case LAMBDA:
+                driver = new LocalEnvironmentManager(environmentName).createDriver();
+                break;
+            case DEVICEFARM:
+                driver = new LocalEnvironmentManager(environmentName).createDriver();
+                break;
+            default:
+                throw new RuntimeException("Browser name is not valid");
+        }
+        driver.get(url);
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalContants.LONG_TIMEOUT));
         return  driver;
     }
